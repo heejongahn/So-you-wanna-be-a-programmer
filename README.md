@@ -32,18 +32,18 @@
 
 
 ## DB 구조
-Post 테이블 : 포스트네임, 발행일자 (또 뭐가 필요하지?)
+Post 테이블 : 포스트네임, 발행일자 (또 뭐가 필요하지?) <br>
 그 외에 특별한 디비가 필요할까? 스태틱 파일들은 어떻게..
 
 
 ## 기술 스택
-Flask + SQLAlchemy
-Twitter Bootstrap + Font Awesome
+- Flask + SQLAlchemy <br>
+- Twitter Bootstrap + Font Awesome
 
 
 ## Someday...
-Heroku, Redis
-Smarter static files store
-Alter HTMl, CSS, JS with slim, sass, ls & preprocessors
-Manager page : To write/edit/delete posts via web. We don't need general user login, though...
-English support *(needed?)*
+- Heroku, Redis
+- Smarter static files store
+- Alter HTMl, CSS, JS with slim, sass, ls and preprocessors
+- Manager page : To write/edit/delete posts via web. We don't need general user login, though...
+- English support *(needed?)*
