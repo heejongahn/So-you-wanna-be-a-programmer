@@ -32,12 +32,13 @@
 
 
 ## DB 구조
-Post 테이블 : 포스트네임, 발행일자 (또 뭐가 필요하지?) <br>
+Post 테이블 : id, 타이틀, 본문, 타임스탬프
+
 그 외에 특별한 디비가 필요할까? 스태틱 파일들은 어떻게..
 
 
 ## 기술 스택
-- Flask + SQLAlchemy <br>
+- Flask + SQLAlchemy
 - Twitter Bootstrap + Font Awesome
 
 
