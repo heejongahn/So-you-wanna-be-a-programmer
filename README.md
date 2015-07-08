@@ -1,5 +1,5 @@
 # So you wanna be a programmar?
-![안선생님](https://raw.github.com/heejongahn/So-you-wanna-be-a-programmer/master/app/static/ahn_teacher.png)
+![안선생님](https://raw.github.com/heejongahn/So-you-wanna-be-a-programmer/master/app/static/image/ahn_teacher.png)
 허허허 이리 오거라.
 
 
