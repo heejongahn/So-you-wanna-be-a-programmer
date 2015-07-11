@@ -1,3 +1,4 @@
+
 <html>
   <head>
     <title>So you wanna be a Programmer</title>
@@ -39,11 +40,15 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+  {% macro render_bootstrap_flash(field) %}
+    <div class="alert alert-success" role="alert">{{field}}</div>
+  {% endmacro %}
+
   {% with messages = get_flashed_messages() %}
     {% if messages %}
       <ul>
       {% for message in messages %}
-          <li>{{ message }} </li>
+          {{ render_bootstrap_flash(message) }}
       {% endfor %}
       </ul>
     {% endif %}

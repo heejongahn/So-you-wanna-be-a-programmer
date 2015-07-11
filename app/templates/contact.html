@@ -1,7 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
-<h3 class"bs-docs-featurette-title">Contact</h3>
+<h3 class="bs-docs-featurette-title">Contact</h3>
 <hr class="half-rule">
 <p class="lead">heejongahn@gmail.com</p>
 <p class="lead">github.com/heejongahn</p>
+<hr class="half-rule">
+<h3 class="bs-docs-featurette-title">Suggestions</h3><br>
+<p class="lead">더 나은 SYWBaP를 위해 자유롭게 건의해주세요</p>
+<form method="POST" action="/contact">
+  {{form.hidden_tag()}}
+  <div class="form-group">
+    {{render_bootstrap_field(form.email)}}
+  </div>
+  <div class="form-group">
+    {{render_bootstrap_field(form.body)}}
+  </div>
+  <button type="submit" class="btn btn-default">건의합니다</button>
+</form>
 {% endblock %}
+
+{% macro render_bootstrap_field(field) %}
+<div class="form-group {% if field.errors %} error {% endif %}">
+  <label class="control-label">{{ field.label }}</label>
+  {{ field(class='form-control')|safe }}
+</div>
+{% endmacro %}
